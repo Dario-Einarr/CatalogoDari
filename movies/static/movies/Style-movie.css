@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.espace__bar {
+    margin-bottom: 1%;
+}
+.Button-var{
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.Button-var ul {
+    margin-left: 15px;
+    margin-right: 15px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+.Button-var ul a li {
+    margin: 2px;
+    padding: 15px;
+    background: gray;
+    border-radius: 40%;
+}
+.Button-var ul a li {
+    text-decoration: none;
+}
+
+.Button-var ul a {
+    text-decoration: none;
+}
+
+.Button-var ul a li:link {
+    color: black;
+}
+
+.Button-var ul a li:visited {
+    color: black;
+}
+
+.Button-var ul a li:hover {
+    background-color: mediumorchid;
+    cursor: pointer;
+}
+
+.Button-var {
+    cursor: pointer;
+}
+
+.container-movie {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 90%;
+    margin-left: 5%;
+    align-items: flex-start;
+    position: relative;
+}
+.container-movie > * {
+    flex-basis: 22%; /* Ajusta este valor según el número de columnas deseadas */
+    box-sizing: border-box;
+}
+body .container-movie .card-container-movie {
+    flex-basis: 22%;
+    margin: 1%;
+}
+
+
+.container-movie .card-img-movie img {
+    width: 100%;
+    min-width: 100%;
+    border-radius: 5%;
+    margin-bottom: 0px;
+}
+
+.container-movie .card-text-movie h4 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-img-movie img:hover {
+    border-radius: 5%;
+}
+.hidden-info-movie-7 {
+    display: none;
+    margin-left: -23%;
+    width: 20%;
+    background-color: rgb(241, 244, 246);
+    border-radius: 5%;
+    border: solid 1px;
+    border-bottom: none;
+    z-index: 5;
+}
+.information_movie{
+ display: flex;
+ flex-direction: column;
+}
+.name_info{
+    font-size: larger;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.year_info{
+    font-size: medium;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.gender_info{
+    font-size: medium;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.language_info{
+    font-size: medium;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.subtitle_info{
+    font-size: medium;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.description_info{
+    font-size: medium;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+

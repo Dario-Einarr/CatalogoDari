@@ -1,0 +1,63 @@
+{% extends "movies/loyaut.html" %}
+{% load static %}
+{% block body %}
+    <div class="container-movie">
+        {% for movie in movies %}
+            {% if word == movie.first_name_letter and movie.image%}
+            <div class="card-container-movie searchable">
+                <div class="card-img-movie">
+                    <a href="{% url  'movies:movie_id' movie.id  %}"> <img class="movie-image" src="/media/{{ movie.image }}" alt="{{movie.name}}">
+                </div></a>
+                <div class="card-text-movie">
+                    <h4>
+                       {{ movie.name }}
+                    </h4>
+                </div>
+            </div>
+            <div class="hidden-info-movie-7 hidden-info">
+                <div class="information_movie">
+                    <div class="name_info">
+                        Nombre: {{ movie.name }}
+                    </div>
+                    <div class="year_info">
+                        Año: {{movie.movies_year}} 
+                    </div>
+                    <div class="gender_info">
+                        Genero:
+                        {% for gender in movie.movies_tipe_movie.all %}
+                        | {{gender}} |
+                        {% endfor %}
+                    </div>
+                    <div class="language_info">         
+                        Idioma: {{ movie.movies_lenguage }}
+                    </div>
+                    <div class="subtitle_info">                 
+                        Subtitulos:{{ movie.movies_subtitles }}
+                    </div>
+                    <div class="description_info">
+                        <strong>Descripcion:</strong> {{movie.description}}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+        <div class="pagination">
+          {% if movies.has_previous %}
+            <a href="?page={{ movies.previous_page_number }}">Anterior</a>
+          {% endif %}
+        
+          {% for num in movies.paginator.page_range %}
+            {% if page_obj.number == num %}
+              <span class="current-page">{{ num }}</span>
+            {% else %}
+              <a href="?page={{ num }}">{{ num }}</a>
+            {% endif %}
+          {% endfor %}
+        
+          {% if movies.has_next %}
+            <a href="?page={{ movies.next_page_number }}">Siguiente</a>
+          {% endif %}
+        </div>
+            </div>
+{% endblock %}

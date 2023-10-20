@@ -1,0 +1,101 @@
+
+#form{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.search_container{
+    background-color: #36082f;
+    width: 100%;
+    padding: 1px;
+}
+#search {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    padding: 10px;
+}
+
+#button-search {
+    background-image: url('/movies/static/movies/image/Icono_lupa01.png');
+    background-repeat: no-repeat;
+    background-size: 50px 40px;
+    
+    border-radius: 45%;
+    margin-left: 73%;
+    width: 50px;
+    height: 40px;
+}
+.navBar-search {
+    width: 100%;
+    position: fixed;
+    background: fixed;
+    background-color: #000;
+    list-style: none;
+    height: 41px;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+
+.container-result {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f5f1f1;
+    max-height: 400px;
+    min-height: 400px;
+    overflow-y: scroll;
+
+}
+
+.container-result li {
+    list-style: none;
+
+}
+
+.container-result li .card-container-movie {
+    display: flex;
+    align-items: center;
+
+}
+
+.container-result li .card-img-movie img {
+    width: 100%
+}
+
+.container-result li .card-container-movie h4 {
+    flex: 1;
+    margin-left: 20px;
+
+}
+
+.container-result li .card-img-movie {
+    width: 5%;
+
+}
+.container-result li .card-container{
+    display: flex ;
+    align-items: center;
+
+}
+.container-result li .card-img img {
+    width: 100% ;
+}
+
+.container-result li .card-img {
+        width: 5%;
+}
+
+.container-result li .card-container .card-text h4 {
+    flex: 1;
+    margin-left: 20px;
+
+}
+.container-result li .card-container .card-text p {
+    display: none;
+
+}
+
+.show {
+    display: none;
+}

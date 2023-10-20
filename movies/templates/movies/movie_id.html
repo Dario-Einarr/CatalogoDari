@@ -1,0 +1,40 @@
+{% extends "movies/loyaut.html" %}
+{% load static%}
+{%  block body %}
+
+    
+{% for movie in movies  %}
+    <!-- JUST SHOW THE MOVIE IN THE ID SPECIFICATE-->
+    {% if movie.id == movie_id %}
+    <div class="independentMovie">
+        <img class="independent_image" src="/media/{{ movie.image }}" alt="{{movie.name}}">
+        <div class="movie_info">
+            <div class="information_movie">
+                <div class="name_info">
+                    Nombre: {{ movie.name }}
+                </div>
+                <div class="year_info">
+                    Año: {{movie.movies_year}} 
+                </div>
+                <div class="gender_info">
+                    Genero:
+                    {% for gender in movie.movies_tipe_movie.all %}
+                    | {{gender}} |
+                    {% endfor %}
+                </div>
+                <div class="language_info">         
+                    Idioma: {{ movie.movies_lenguage }}
+                </div>
+                <div class="subtitle_info">                 
+                    Subtitulos:{{ movie.movies_subtitles }}
+                </div>
+                <div class="description_info">
+                    <strong>Descripcion:</strong> {{movie.description}}
+                </div>
+            </div>
+        </div>
+    </div> 
+    {% endif %} 
+{% endfor %}
+
+{% endblock %}

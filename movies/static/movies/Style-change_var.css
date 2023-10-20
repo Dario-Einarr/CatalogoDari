@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.change_var{
+    display: flex;
+    width: 75%; 
+    margin-left: 12.5%;
+    padding: 20px;
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+}
+.change_var a{
+    text-decoration: none;
+    list-style: none;
+    margin: 2px;
+    border: solid 2px red;
+}
+.change_var a:link{
+    color: red;
+}
+.change_var a:visited{
+    color: white;
+}

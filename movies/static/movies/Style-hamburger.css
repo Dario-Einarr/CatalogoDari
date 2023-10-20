@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#button-hamburger{
+    position: absolute;
+}
+#hamburger button{
+    background: none;
+    border: 1px;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+}
+.open span{
+    border-radius: 5px;
+    border: solidc 1px;
+    background: white !important;
+    display: block;
+    width: 60%;
+    margin: 5px auto;
+    height: 2px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+} 
+#hamburger button span{
+    border-radius: 5px;
+    border: solidc 1px;
+    background: black;
+    display: block;
+    width: 60%;
+    margin: 5px auto;
+    height: 2px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* abrir*/
+#hamburger button.open .top-line{
+    animation-name: top-line-animation-open;
+}
+#hamburger button.open .middle-line{
+    animation-name: middle-line-animation-open;
+}
+#hamburger button.open .bottom-line{
+    animation-name: bottom-line-animation-open;
+}
+/*cerrar*/
+#hamburger button .top-line{
+    animation-name: top-line-animation-close;
+}
+#hamburger button .middle-line{
+    animation-name: middle-line-animation-close;
+}
+#hamburger button .bottom-line{
+    animation-name: bottom-line-animation-close;
+}
+
+/*animacion open*/
+@keyframes top-line-animation-open{
+    0%{
+        margin: 0 auto;
+        transform: translateY(2px) rotate(-45deg);
+    }
+    50%, 100%{
+        margin: 5px auto;
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+@keyframes middle-line-animation-open{
+    0%{
+        margin: 0 auto;
+        width: 0;
+        opacity: 0;
+    }
+    20%,100%{
+        margin: 0 auto;
+        width: 60%;
+        opacity: 1;
+    }
+}
+@keyframes bottom-line-animation-open{
+    0%{
+        margin: 0 auto;
+        transform: translateY(-2px) rotate(45deg);
+    }
+    50%, 100%{
+        margin: 5px auto;
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+@keyframes top-line-animation-close{
+    50%, 100%{
+        margin: 0 auto;
+        transform: translateY(2px) rotate(-45deg);
+    }
+}
+@keyframes middle-line-animation-close{
+    20%, 100%{
+        margin: 0 auto;
+        width: 0;
+        opacity: 0;
+    }
+}
+@keyframes bottom-line-animation-close{
+    50%, 100%{
+        margin: 0 auto;
+        transform: translateY(-2px) rotate(45deg);
+    }
+}
+.move__Buttom {
+    padding-left: 12.1%;
+    background-color: white;
+    border-right: solid 1px;
+}
+
