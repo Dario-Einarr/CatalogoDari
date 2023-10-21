@@ -16,7 +16,7 @@
 .open span{
     border-radius: 5px;
     border: solidc 1px;
-    background: white !important;
+    background: white ;
     display: block;
     width: 60%;
     margin: 5px auto;
@@ -27,7 +27,7 @@
 #hamburger button span{
     border-radius: 5px;
     border: solidc 1px;
-    background: black;
+    background: white;
     display: block;
     width: 60%;
     margin: 5px auto;

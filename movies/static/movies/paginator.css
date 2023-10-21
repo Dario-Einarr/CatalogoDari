@@ -1,0 +1,26 @@
+.pagination {
+    margin: auto;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    max-width: 1000px;
+    
+}
+.pagination_container{
+    margin: auto;
+}
+.pagination a {
+    margin:auto;
+    list-style: none;
+    text-decoration: none;
+    border: solid rgba(40, 44, 255, 0.585) 1px ;
+    margin: 3px;
+    margin-bottom: 100px;
+}
+.pagination a:hover {
+    background-color: rgb(151, 151, 151);
+}
+
+.foot_page{
+    height: 20px;
+}

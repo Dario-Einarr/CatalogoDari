@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.independentMovie{
+    display: flex;   
+    flex-direction: column;
+}
+.container_image{
+    margin: auto;
+    width: 20%;
+    position: relative;
+}
+.independent_image{
+    width: 100%;
+    box-shadow: 0 5px 10px;
+}
+.information_movie{
+    margin-top: 20px;
+
+}
+.name_info{
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 10px;
+    background-color: rgb(255, 251, 251);
+}
+.description_info strong{
+    text-decoration: underline;
+}
+.description_info p {
+    margin: 16px 0px;
+    text-align: start;
+}
+.details h1 {
+    text-decoration: underline;
+}
+.table_container {
+
+    margin: 25px;
+    min-width: 400px;
+}
+.table_container  td {
+    
+    padding: 12px 15px;
+}
+.table_container th{ 
+    align-items: start;
+}

@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded' , function(){
         buttom__Move.classList.toggle('move__Buttom')
             ?buttom__Move.classList.add('move__Buttom')
             :buttom__Move.classList.remove('move__Buttom');
-
     });
     nav.addEventListener('click', function(){
         side__Bar.classList.toggle('show')
